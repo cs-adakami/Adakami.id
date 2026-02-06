@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 Allow: /public/
-Sitemap: https://adakami.id/sitemap.xml
+Sitemap: https://www.csadakami.space/sitemap.xml
 
 User-agent: Googlebot
 Allow: /
