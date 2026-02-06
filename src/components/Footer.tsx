@@ -1,4 +1,4 @@
-import { MapPin, Phone } from 'lucide-react';
+import { MapPin, Phone, Clock } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -33,9 +33,12 @@ export default function Footer() {
           <h3 className="text-emerald-400 font-semibold text-sm mb-2 uppercase tracking-wider">
             Jam Operasional
           </h3>
-          <p className="text-slate-400 text-xs leading-relaxed">
-            Senin - Jumat: 09:00 - 18:00 WIB<br />
-            Sabtu: 09:00 - 15:00 WIB
+          <div className="flex items-center justify-center md:justify-start gap-2 text-slate-400 text-xs leading-relaxed">
+            <Clock className="w-4 h-4 text-emerald-500" />
+            <span className="font-bold text-emerald-400">Buka 24 Jam</span>
+          </div>
+          <p className="text-slate-500 text-[10px] mt-1 italic">
+            Selalu siap membantu kendala Anda kapan saja.
           </p>
         </div>
       </div>
