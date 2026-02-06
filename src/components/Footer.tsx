@@ -6,46 +6,46 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
         <div className="text-center md:text-left">
           <h3 className="text-emerald-400 font-semibold text-sm mb-2 uppercase tracking-wider">
-            Tentang Kami
+            Layanan Resmi
           </h3>
           <p className="text-slate-400 text-xs leading-relaxed">
-            Portal informasi resmi AdaKami untuk kemudahan akses dan panduan lengkap bagi pengguna.
+            Pusat informasi dan layanan pelanggan resmi AdaKami untuk panduan lengkap bantuan teknis bagi seluruh pengguna.
           </p>
         </div>
 
         <div className="text-center md:text-left">
           <h3 className="text-emerald-400 font-semibold text-sm mb-2 uppercase tracking-wider">
-            Kontak
+            Hubungi Kami
           </h3>
           <div className="space-y-2">
             <div className="flex items-center justify-center md:justify-start gap-2 text-slate-400 text-xs">
               <MapPin className="w-4 h-4 text-emerald-500" />
-              <span>Kuningan Timur, Jakarta Selatan</span>
+              <span>Kuningan Timur, Jakarta Selatan, DKI Jakarta</span>
             </div>
             <div className="flex items-center justify-center md:justify-start gap-2 text-slate-400 text-xs">
               <Phone className="w-4 h-4 text-emerald-500" />
-              <span className="font-semibold">0821-750-6899</span>
+              <span className="font-semibold text-white">0821-750-6899</span>
             </div>
           </div>
         </div>
 
         <div className="text-center md:text-left">
           <h3 className="text-emerald-400 font-semibold text-sm mb-2 uppercase tracking-wider">
-            Jam Operasional
+            Waktu Layanan
           </h3>
           <div className="flex items-center justify-center md:justify-start gap-2 text-slate-400 text-xs leading-relaxed">
             <Clock className="w-4 h-4 text-emerald-500" />
-            <span className="font-bold text-emerald-400">Buka 24 Jam</span>
+            <span className="font-bold text-emerald-400">Tersedia 24 Jam</span>
           </div>
           <p className="text-slate-500 text-[10px] mt-1 italic">
-            Selalu siap membantu kendala Anda kapan saja.
+            Melayani informasi dan bantuan teknis kapan saja.
           </p>
         </div>
       </div>
 
       <div className="text-center py-4 border-t border-slate-800">
         <p className="text-slate-500 text-xs">
-          © 2026 Portal Bantuan AdaKami. Semua hak cipta dilindungi undang-undang.
+          © 2026 Layanan Pelanggan AdaKami. Semua hak cipta dilindungi undang-undang.
         </p>
       </div>
     </footer>
