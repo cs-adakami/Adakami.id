@@ -4,7 +4,7 @@ import { useState } from 'react';
 export default function WhatsAppFloat() {
   const [isOpen, setIsOpen] = useState(false);
   const waNumber = '628217506899';
-  const defaultMessage = 'Hallo, saya ingin informasi lebih lanjut';
+  const defaultMessage = 'Halo, saya ingin bantuan mengenai layanan AdaKami';
 
   const handleSendMessage = (message: string) => {
     window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`, '_blank');
@@ -28,37 +28,37 @@ export default function WhatsAppFloat() {
       {isOpen && (
         <div className="fixed bottom-28 right-6 w-80 bg-slate-900 rounded-2xl shadow-2xl border border-slate-700 overflow-hidden z-40 animate-slideUp">
           <div className="bg-gradient-to-r from-green-600 to-emerald-600 p-4">
-            <h3 className="text-white font-semibold text-lg">Portal Bantuan AdaKami</h3>
-            <p className="text-green-50 text-sm mt-1">Tim siap membantu Anda</p>
+            <h3 className="text-white font-semibold text-lg">Layanan Pelanggan AdaKami</h3>
+            <p className="text-green-50 text-sm mt-1">Siap membantu kendala Anda 24 Jam</p>
           </div>
 
           <div className="p-4 space-y-3 max-h-96 overflow-y-auto">
             <button
-              onClick={() => handleSendMessage('Halo, saya ingin informasi umum')}
+              onClick={() => handleSendMessage('Halo, saya butuh informasi layanan resmi')}
               className="w-full text-left p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors text-sm text-slate-200"
             >
-              📋 Informasi Umum
+              📋 Informasi Layanan Resmi
             </button>
 
             <button
-              onClick={() => handleSendMessage('Saya ingin bertanya tentang panduan penggunaan')}
+              onClick={() => handleSendMessage('Halo, saya ingin panduan bantuan teknis')}
               className="w-full text-left p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors text-sm text-slate-200"
             >
-              📖 Panduan Penggunaan
+              📖 Panduan Bantuan Teknis
             </button>
 
             <button
-              onClick={() => handleSendMessage('Saya butuh bantuan teknis')}
+              onClick={() => handleSendMessage('Halo, saya butuh bantuan kendala akun')}
               className="w-full text-left p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors text-sm text-slate-200"
             >
-              🔧 Bantuan Teknis
+              🔧 Bantuan Kendala Akun
             </button>
 
             <button
-              onClick={() => handleSendMessage('Saya ingin berbicara dengan tim support')}
+              onClick={() => handleSendMessage('Halo, saya ingin bicara dengan CS AdaKami')}
               className="w-full text-left p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors text-sm text-slate-200"
             >
-              💬 Hubungi Tim Support
+              💬 Hubungi CS Resmi
             </button>
 
             <div className="pt-3 border-t border-slate-700">
@@ -66,7 +66,7 @@ export default function WhatsAppFloat() {
                 onClick={() => handleSendMessage(defaultMessage)}
                 className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg transition-colors"
               >
-                Kirim Pesan Langsung
+                Kirim Pesan Sekarang
               </button>
             </div>
           </div>
