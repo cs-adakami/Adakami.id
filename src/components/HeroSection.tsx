@@ -1,14 +1,19 @@
 export default function HeroSection() {
+  // Shinta gunakan link yang lebih pendek dan stabil agar mudah dibaca robot Google
+  const mainImage = "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg";
+  const backupImage = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg";
+
   return (
     <div className="mb-8">
       <div className="relative overflow-hidden rounded-3xl">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/40 to-slate-900/60 z-10"></div>
         <img
-          src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src={`${mainImage}?auto=compress&cs=tinysrgb&w=1200`}
           alt="Layanan Pelanggan AdaKami"
           className="w-full h-64 md:h-80 object-cover"
+          loading="lazy"
           onError={(e) => {
-            e.currentTarget.src = 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1200';
+            e.currentTarget.src = `${backupImage}?auto=compress&cs=tinysrgb&w=1200`;
           }}
         />
         <div className="absolute inset-0 z-20 flex items-center justify-center p-6">
