@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export default function WhatsAppFloat() {
   const [isOpen, setIsOpen] = useState(false);
-  const waNumber = '6288973187661';
+  const waNumber = '6288973187761';
   const defaultMessage = 'Halo, saya ingin bantuan mengenai layanan AdaKami';
 
   const handleSendMessage = (message: string) => {
