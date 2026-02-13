@@ -24,7 +24,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center justify-center md:justify-start gap-2 text-slate-400 text-xs">
               <Phone className="w-4 h-4 text-emerald-500" />
-              <span className="font-semibold text-white">0889-7318-7661</span>
+              <span className="font-semibold text-white">0889-7318-7761</span>
             </div>
           </div>
         </div>
