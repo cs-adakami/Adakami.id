@@ -7,7 +7,7 @@ interface MenuItem {
 }
 
 export default function InfoCard() {
-  const waNumber = '62822122456';
+  const waNumber = '628217506899';
 
   const menuItems: MenuItem[] = [
     {
